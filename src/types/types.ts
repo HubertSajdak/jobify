@@ -23,3 +23,10 @@ export interface UserStateProps {
 		token: string
 	} | null
 }
+export interface AddJobFormProps {
+	position: string
+	company: string
+	jobLocation: string
+	status: string
+	jobType: string
+}

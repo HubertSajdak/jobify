@@ -26,6 +26,26 @@
 		"locationInput": "standort",
 		"saveButton": "Änderungen speichern"
 	},
+	"addJobPage": {
+		"headerAdd": "Job hinzufügen",
+		"headerEdit": "Angebot bearbeiten",
+		"positionInput": "Arbeitsplatz",
+		"companyInput": "Unternehmen",
+		"jobLocationInput": "Arbeitsort",
+		"statusSelectLabel": "status",
+		"jobTypeSelectLabel": "Auftragsart",
+		"clearBtn": "löschen",
+		"submitBtn": "einreichen"
+	},
+	"statusAndJobTypeOptions": {
+		"interview": "interview",
+		"declined": "abgelehnt",
+		"pending": "ausstehend",
+		"full-time": "Vollzeit",
+		"part-time": "Teilzeit",
+		"remote": "remote",
+		"internship": "praktikum"
+	},
 	"navbar": {
 		"greetings": "Hallo",
 		"logoutBtn": "Abmeldung"

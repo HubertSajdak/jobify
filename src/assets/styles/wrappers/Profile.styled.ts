@@ -28,7 +28,9 @@ export const Wrapper = styled.section`
 	}
 
 	.btn {
+		margin-top: 0.5rem;
 		height: 35px;
+		white-space: nowrap;
 	}
 	@media (max-width: ${({ theme }) => theme.breakpoints.breakpointLg}) {
 		.form-center {
