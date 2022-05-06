@@ -15,7 +15,7 @@ const Navbar = () => {
 		dispatch(sidebarActions.toggleSidebar())
 	}
 	const logoutUser = () => {
-		dispatch(userActions.logoutUser('Loggin out'))
+		dispatch(userActions.logoutUser('Logging out'))
 	}
 
 	return (
