@@ -1,0 +1,39 @@
+{
+	"landingPage": {
+		"register": "register/login",
+		"header": "find your dream job"
+	},
+	"notFoundPage": {
+		"header": "page not found",
+		"text": "We can't seem to find the page you're looking for",
+		"link": "back home"
+	},
+	"registerPage": {
+		"headerLog": "login",
+		"headerReg": "register",
+		"name": "name",
+		"email": "email",
+		"password": "password",
+		"login": "login",
+		"register": "register",
+		"memberText1": "Already a member?",
+		"memberText2": "New to Jobify?"
+	},
+	"profilePage": {
+		"nameInput": "name",
+		"lastNameInput": "last name",
+		"emailInput": "email",
+		"locationInput": "location",
+		"saveButton": "save changes"
+	},
+	"navbar": {
+		"greetings": "greetings",
+		"logoutBtn": "logout"
+	},
+	"navLinks": {
+		"stats": "stats",
+		"offers": "offers",
+		"addJob": "add job",
+		"profile": "profile"
+	}
+}

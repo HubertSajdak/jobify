@@ -1,0 +1,39 @@
+{
+	"landingPage": {
+		"register": "zarejestruj/logowanie",
+		"header": "znajdź swoja pracę marzeń"
+	},
+	"notFoundPage": {
+		"header": "nie odnaleziono strony",
+		"text": "Nie mogliśmy znaleźć strony o podanym adresie",
+		"link": "Powrót"
+	},
+	"registerPage": {
+		"headerLog": "logowanie",
+		"headerReg": "rejestracja",
+		"name": "nazwa",
+		"email": "email",
+		"password": "hasło",
+		"login": "zaloguj",
+		"register": "zarejestruj",
+		"memberText1": "Masz już konto?",
+		"memberText2": "Nie masz konta?"
+	},
+	"profilePage": {
+		"nameInput": "imię",
+		"lastNameInput": "nazwisko",
+		"emailInput": "email",
+		"locationInput": "lokalizacja",
+		"saveButton": "zapisz zmiany"
+	},
+	"navbar": {
+		"greetings": "cześć",
+		"logoutBtn": "wyloguj"
+	},
+	"navLinks": {
+		"stats": "statystyki",
+		"offers": "oferty",
+		"addJob": "dodaj ofertę",
+		"profile": "profil"
+	}
+}

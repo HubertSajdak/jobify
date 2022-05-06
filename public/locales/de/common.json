@@ -1,0 +1,39 @@
+{
+	"landingPage": {
+		"register": "registrieren/anmeldung",
+		"header": "finden sie ihren traumjob"
+	},
+	"notFoundPage": {
+		"header": "Seite nicht gefunden",
+		"text": "Wir können die von Ihnen gesuchte Seite nicht finden",
+		"link": "Rückkehr"
+	},
+	"registerPage": {
+		"headerLog": "anmeldung",
+		"headerReg": "registrieren",
+		"name": "name",
+		"email": "email",
+		"password": "passwort",
+		"login": "einloggen",
+		"register": "registrieren",
+		"memberText1": "Sie sind bereits Mitglied?",
+		"memberText2": "Neu bei Jobify?"
+	},
+	"profilePage": {
+		"nameInput": "vorname",
+		"lastNameInput": "zuname",
+		"emailInput": "email",
+		"locationInput": "standort",
+		"saveButton": "Änderungen speichern"
+	},
+	"navbar": {
+		"greetings": "Hallo",
+		"logoutBtn": "Abmeldung"
+	},
+	"navLinks": {
+		"stats": "statistiken",
+		"offers": "Angebote",
+		"addJob": "job hinzufügen",
+		"profile": "profile"
+	}
+}
