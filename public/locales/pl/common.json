@@ -26,6 +26,27 @@
 		"locationInput": "lokalizacja",
 		"saveButton": "zapisz zmiany"
 	},
+	"addJobPage": {
+		"headerAdd": "dodaj ofertę",
+		"headerEdit": "edytuj ofertę",
+
+		"positionInput": "stanowisko",
+		"companyInput": "firma",
+		"jobLocationInput": "lokalizacja",
+		"statusSelectLabel": "status",
+		"jobTypeSelectLabel": "typ pracy",
+		"clearBtn": "wyczyść",
+		"submitBtn": "zatwierdź"
+	},
+	"statusAndJobTypeOptions": {
+		"interview": "roz. kwalifikacyjna",
+		"declined": "odrzucono",
+		"pending": "oczekujący",
+		"full-time":"pełny etat",
+		"part-time":"niepełny etat",
+		"remote":"zdalnie",
+		"internship":"staż"
+	},
 	"navbar": {
 		"greetings": "cześć",
 		"logoutBtn": "wyloguj"

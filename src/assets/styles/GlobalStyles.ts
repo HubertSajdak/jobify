@@ -159,7 +159,7 @@ ul {
 	min-height: 100vh;
 
 }
-.form-input {
+.form-input, .form-select {
 	height: 35px;
 	border-radius:var(--borderRadius);
 	border: 1px solid var(--grey-200);

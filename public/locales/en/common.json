@@ -26,6 +26,27 @@
 		"locationInput": "location",
 		"saveButton": "save changes"
 	},
+	"addJobPage": {
+		"headerAdd": "add job",
+		"headerEdit": "edit job",
+
+		"positionInput": "position",
+		"companyInput": "company",
+		"jobLocationInput": "job location",
+		"statusSelectLabel": "status",
+		"jobTypeSelectLabel": "job type",
+		"clearBtn": "clear",
+		"submitBtn": "submit"
+	},
+	"statusAndJobTypeOptions": {
+		"interview": "interview",
+		"declined": "declined",
+		"pending": "pending",
+		"full-time": "full-time",
+		"part-time": "part-time",
+		"remote": "remote",
+		"internship": "internship"
+	},
 	"navbar": {
 		"greetings": "greetings",
 		"logoutBtn": "logout"
