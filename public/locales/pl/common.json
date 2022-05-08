@@ -20,11 +20,17 @@
 		"memberText2": "Nie masz konta?"
 	},
 	"profilePage": {
+		"profileHeader": "profil",
+
 		"nameInput": "imię",
 		"lastNameInput": "nazwisko",
 		"emailInput": "email",
 		"locationInput": "lokalizacja",
 		"saveButton": "zapisz zmiany"
+	},
+	"allJobsPage": {
+		"editButton": "edytuj",
+		"clearButton": "wyczyść"
 	},
 	"addJobPage": {
 		"headerAdd": "dodaj ofertę",
@@ -42,10 +48,10 @@
 		"interview": "roz. kwalifikacyjna",
 		"declined": "odrzucono",
 		"pending": "oczekujący",
-		"full-time":"pełny etat",
-		"part-time":"niepełny etat",
-		"remote":"zdalnie",
-		"internship":"staż"
+		"full-time": "pełny etat",
+		"part-time": "niepełny etat",
+		"remote": "zdalnie",
+		"internship": "staż"
 	},
 	"navbar": {
 		"greetings": "cześć",
@@ -56,5 +62,8 @@
 		"offers": "oferty",
 		"addJob": "dodaj ofertę",
 		"profile": "profil"
+	},
+	"momentTrans": {
+		"momentLang": "pl"
 	}
 }
