@@ -20,6 +20,7 @@
 		"memberText2": "Neu bei Jobify?"
 	},
 	"profilePage": {
+		"profileHeader":"profil",
 		"nameInput": "vorname",
 		"lastNameInput": "zuname",
 		"emailInput": "email",
@@ -36,6 +37,10 @@
 		"jobTypeSelectLabel": "Auftragsart",
 		"clearBtn": "löschen",
 		"submitBtn": "einreichen"
+	},
+	"allJobsPage": {
+		"editButton": "bearbeiten",
+		"clearButton": "löschen"
 	},
 	"statusAndJobTypeOptions": {
 		"interview": "interview",
@@ -55,5 +60,8 @@
 		"offers": "Angebote",
 		"addJob": "job hinzufügen",
 		"profile": "profile"
+	},
+	"momentTrans": {
+		"momentLang": "de"
 	}
 }

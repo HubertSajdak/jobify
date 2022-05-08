@@ -34,6 +34,7 @@ const Profile = () => {
 	return (
 		<Wrapper>
 			<form className='form' onSubmit={handleSubmit}>
+				<h3>{t('profilePage.profileHeader')}</h3>
 				<div className='profile-img'>
 					<img src={profileImg} alt='user avatar' />
 				</div>

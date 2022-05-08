@@ -20,6 +20,8 @@
 		"memberText2": "New to Jobify?"
 	},
 	"profilePage": {
+		"profileHeader": "profile",
+
 		"nameInput": "name",
 		"lastNameInput": "last name",
 		"emailInput": "email",
@@ -37,6 +39,10 @@
 		"jobTypeSelectLabel": "job type",
 		"clearBtn": "clear",
 		"submitBtn": "submit"
+	},
+	"allJobsPage": {
+		"editButton": "edit",
+		"clearButton": "clear"
 	},
 	"statusAndJobTypeOptions": {
 		"interview": "interview",
@@ -56,5 +62,8 @@
 		"offers": "offers",
 		"addJob": "add job",
 		"profile": "profile"
+	},
+	"momentTrans": {
+		"momentLang": "en-gb"
 	}
 }

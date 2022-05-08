@@ -23,6 +23,10 @@ export const theme = {
 		redDark: '#842029',
 		greenLight: '#d1e7dd',
 		greenDark: '#0f5132',
+		statusYellow: '#fcefc7',
+		statusBlue: '#647acb',
+		statusRed: '#ffeeee',
+		tomato:'tomato'
 	},
 	shadow: {
 		shadow1: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
@@ -47,10 +51,12 @@ export const theme = {
 	font: {
 		smallText: '0.875rem',
 		extraSmallText: '0.7em',
+		letterSpacing: '1px',
 	},
 	breakpoints: {
-		breakpointLg:'992px'
-	}
+		breakpointLg: '992px',
+	},
+
 }
 
 export type Theme = typeof theme

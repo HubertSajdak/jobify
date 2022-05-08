@@ -5,7 +5,7 @@ import { toast } from 'react-toastify'
 import { Wrapper } from 'assets/styles/wrappers/AddJob.styled'
 import addImg from 'assets/images/add-job-img.svg'
 import React, { useEffect } from 'react'
-import { createJob, jobActions } from '../jobSlice'
+import { clearValues, createJob, editJob, handleChange } from '../jobSlice'
 import { useTranslation } from 'react-i18next'
 const AddJob = () => {
 	const { t } = useTranslation('common')
@@ -26,29 +26,31 @@ const AddJob = () => {
 
 	useEffect(() => {
 		if (!isEditing) {
-			dispatch(jobActions.handleChange({ name: 'jobLocation', value: user!.location }))
+			dispatch(handleChange({ name: 'jobLocation', value: user!.location }))
 		}
-	}, [])
+	}, [dispatch, isEditing, user])
 
-	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+	const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
 		e.preventDefault()
 		if (!position || !company || !jobLocation) {
-			return toast.error('please fill out all fields')
+			toast.error('Please fill out all fields')
+			return
+		}
+		if (isEditing) {
+			dispatch(editJob({ jobId: editJobId, job: { position, company, jobLocation, jobType, status } }))
+			return
 		}
 		dispatch(createJob({ position, company, jobLocation, jobType, status }))
 	}
 	const handleJobInput = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
 		const name = e.target.name
 		const value = e.target.value
-		dispatch(jobActions.handleChange({ name, value }))
-	}
-	const clearInputs = () => {
-		dispatch(jobActions.clearValues())
+		dispatch(handleChange({ name, value }))
 	}
 
 	return (
 		<Wrapper>
-			<form onSubmit={handleSubmit} className='form'>
+			<form className='form'>
 				<h3>{isEditing ? t('addJobPage.headerEdit') : t('addJobPage.headerAdd')}</h3>
 				<div className='add-job-img'>
 					<img src={addImg} alt='new files' />
@@ -90,10 +92,12 @@ const AddJob = () => {
 						list={jobTypeOptions}
 					/>
 					<div className='btn-container'>
-						<button className='btn clear-btn' type='button' onClick={clearInputs}>
+						<button type='button' className='btn clear-btn' onClick={() => dispatch(clearValues())}>
 							{t('addJobPage.clearBtn')}
 						</button>
-						<button className='btn'>{t('addJobPage.submitBtn')}</button>
+						<button type='submit' className='btn' disabled={isLoading} onClick={handleSubmit}>
+							{t('addJobPage.submitBtn')}
+						</button>
 					</div>
 				</div>
 			</form>
