@@ -1,9 +1,10 @@
 import Job from 'components/Job/Job'
 import { Wrapper } from 'assets/styles/wrappers/JobsContainer.styled'
 import { useAppDispatch, useAppSelector } from 'store/hooks'
-import { BubbleSpinLoader } from 'react-css-loaders'
 import { useEffect } from 'react'
 import { getAllJobs } from 'features/Dashboard/allJobsSlice'
+//@ts-ignore
+import { Spinner } from 'react-loading-io'
 const JobsContainer = () => {
 	const { jobs, isLoading } = useAppSelector(state => state.allJobs)
 	const dispatch = useAppDispatch()
@@ -15,7 +16,7 @@ const JobsContainer = () => {
 	if (isLoading) {
 		return (
 			<Wrapper>
-				<h2>loading</h2>
+				<Spinner color='royalblue' />
 			</Wrapper>
 		)
 	}

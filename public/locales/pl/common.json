@@ -44,6 +44,12 @@
 		"clearBtn": "wyczyść",
 		"submitBtn": "zatwierdź"
 	},
+	"statsPage": {
+		"statsHeader": "aplikacje miesięcznie",
+		"pendingStatItem": "oczekujące aplikacje",
+		"interviewStatItem": "zaplanowane roz. kwalifikacyjne",
+		"declinedStatItem": "odrzucone oferty"
+	},
 	"statusAndJobTypeOptions": {
 		"interview": "roz. kwalifikacyjna",
 		"declined": "odrzucono",

@@ -5,6 +5,7 @@ interface JobInfoProps {
 	text: string
 }
 const JobInfo = ({ icon, text }: JobInfoProps) => {
+	console.log(text)
 	return (
 		<Wrapper>
 			<span className='icon'>{icon}</span>
