@@ -16,6 +16,7 @@ export const Wrapper = styled.aside`
 			width: 250px;
 			margin-left: -250px;
 			transition: all 0.3s;
+			height: 100%;
 		}
 		.content {
 			position: sticky;
@@ -39,7 +40,6 @@ export const Wrapper = styled.aside`
 			display: flex;
 			align-items: center;
 			width: 100%;
-
 			padding: 1rem 1rem 1rem 2.5rem;
 			color: ${({ theme }) => theme.palette.grey5};
 			text-transform: capitalize;

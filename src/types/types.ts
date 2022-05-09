@@ -1,5 +1,7 @@
 // register types
 
+import { IconType } from 'react-icons'
+
 export interface RegisterProps {
 	name: string
 	email: string
@@ -76,4 +78,18 @@ export interface AllJobsProps extends InitialFilterStateProps {
 		count: number
 		date: string
 	}[]
+}
+export interface StatItemProps {
+	count: number
+	title: string
+	icon: React.ReactElement<any, any>
+	color: string
+	bgc: string
+}
+export interface DefaultStatsProps {
+	title: string
+	count: number
+	icon: React.ReactElement
+	color: string
+	bgc: string
 }

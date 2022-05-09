@@ -20,7 +20,7 @@
 		"memberText2": "Neu bei Jobify?"
 	},
 	"profilePage": {
-		"profileHeader":"profil",
+		"profileHeader": "profil",
 		"nameInput": "vorname",
 		"lastNameInput": "zuname",
 		"emailInput": "email",
@@ -41,6 +41,12 @@
 	"allJobsPage": {
 		"editButton": "bearbeiten",
 		"clearButton": "löschen"
+	},
+	"statsPage": {
+		"statsHeader": "monatliche Anträge",
+		"pendingStatItem": "anhängige Anträge",
+		"interviewStatItem": "geplante Interviews",
+		"declinedStatItem": "abgelehnte Angebote"
 	},
 	"statusAndJobTypeOptions": {
 		"interview": "interview",

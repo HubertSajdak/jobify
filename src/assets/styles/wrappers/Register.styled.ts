@@ -58,6 +58,9 @@ export const Wrapper = styled.section`
 	.btn {
 		margin-bottom: 1rem;
 	}
+	.btn-demo {
+		background-color: ${({ theme }) => theme.palette.primary2};
+	}
 	@media (max-width: ${({ theme }) => theme.breakpoints.breakpointLg}) {
 		.register-img {
 			display: none;
