@@ -43,7 +43,7 @@ const Register = () => {
 			return
 		}
 		if (isMember) {
-			dispatch(loginUser({  email, password }))
+			dispatch(loginUser({ email, password }))
 			return
 		}
 		dispatch(registerUser({ name, email, password }))
@@ -82,8 +82,15 @@ const Register = () => {
 						value={values.password}
 						handleChange={handleChange}
 					/>
-					<button className='btn' type='submit'>
+					<button className='btn' type='submit' disabled={isLoading}>
 						{values.isMember ? t('registerPage.login') : t('registerPage.register')}
+					</button>
+					<button
+						className='btn btn-demo'
+						type='button'
+						disabled={isLoading}
+						onClick={() => dispatch(loginUser({ email: 'testUser@test.com', password: 'secret' }))}>
+						{isLoading ? 'loading...' : 'Demo'}
 					</button>
 					<p>
 						{values.isMember ? t('registerPage.memberText2') : t('registerPage.memberText1')}

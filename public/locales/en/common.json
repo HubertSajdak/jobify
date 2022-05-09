@@ -44,6 +44,12 @@
 		"editButton": "edit",
 		"clearButton": "clear"
 	},
+	"statsPage": {
+		"statsHeader": "monthly applications",
+		"pendingStatItem": "pending applications",
+		"interviewStatItem": "interviews scheduled",
+		"declinedStatItem": "jobs declined"
+	},
 	"statusAndJobTypeOptions": {
 		"interview": "interview",
 		"declined": "declined",
