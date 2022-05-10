@@ -10,8 +10,8 @@ const Landing = () => {
 		<Wrapper>
 			<nav>
 				<Logo />
+				<LangSwitcher />
 			</nav>
-			<LangSwitcher />
 			<div className='container page'>
 				<div className='info'>
 					<h1>{t('landingPage.header')}</h1>

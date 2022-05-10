@@ -11,7 +11,7 @@ const initialFilterState: InitialFilterStateProps = {
 	sortOptions: ['latest', 'oldest', 'a-z', 'z-a'],
 }
 
-const initialState: AllJobsProps = {
+const initialState: Omit<AllJobsProps, 'defaultStats'> = {
 	isLoading: false,
 	jobs: [],
 	totalJobs: 0,
@@ -26,8 +26,12 @@ const initialState: AllJobsProps = {
 	...initialFilterState,
 }
 
-export const getAllJobs = createAsyncThunk('allJobs/getAllJobs', async (_: null, thunkAPI) => {
-	let url = `/jobs`
+export const getAllJobs = createAsyncThunk('allJobs/getAllJobs', async (_: null, thunkAPI: any) => {
+	const { page, search, searchStatus, searchType, sort } = thunkAPI.getState().allJobs
+	let url = `/jobs?status=${searchStatus}&jobType=${searchType}&sort=${sort}&page=${page}`
+	if (search) {
+		url = url + `&search=${search}`
+	}
 	try {
 		const res = await customFetch.get(url)
 		return res.data
@@ -49,7 +53,20 @@ export const showStats = createAsyncThunk('allJobs/showStats', async (_, thunkAP
 const allJobsSlice = createSlice({
 	name: 'allJobs',
 	initialState,
-	reducers: {},
+	reducers: {
+		handleChange: (state, { payload }) => {
+			const { name, value }: { name: string; value: string } = payload
+			state.page = 1
+			state[name as keyof Omit<InitialFilterStateProps, 'sortOptions'>] = value
+		},
+		clearFilters: state => {
+			return { ...state, ...initialFilterState }
+		},
+		changePage: (state, action) => {
+			const payload = action.payload as number
+			state.page = payload
+		},
+	},
 	extraReducers: builder => {
 		builder.addCase(getAllJobs.pending, state => {
 			state.isLoading = true
@@ -62,6 +79,8 @@ const allJobsSlice = createSlice({
 			) => {
 				state.isLoading = false
 				state.jobs = payload.jobs
+				state.numOfPages = payload.numOfPages
+				state.totalJobs = payload.totalJobs
 			}
 		)
 		builder.addCase(getAllJobs.rejected, (state, action) => {
@@ -72,7 +91,7 @@ const allJobsSlice = createSlice({
 		builder.addCase(showStats.pending, state => {
 			state.isLoading = true
 		})
-		builder.addCase(showStats.fulfilled, (state, { payload }) => {
+		builder.addCase(showStats.fulfilled, (state, { payload }: PayloadAction<AllJobsProps>) => {
 			state.isLoading = false
 			state.stats = payload.defaultStats
 			state.monthlyApplications = payload.monthlyApplications
@@ -84,4 +103,5 @@ const allJobsSlice = createSlice({
 		})
 	},
 })
+export const { handleChange, clearFilters, changePage } = allJobsSlice.actions
 export default allJobsSlice.reducer

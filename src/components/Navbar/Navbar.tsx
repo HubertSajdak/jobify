@@ -1,5 +1,5 @@
 import { Wrapper } from 'assets/styles/wrappers/Navbar.styled'
-import { FaAlignLeft, FaUserCircle, FaCaretDown } from 'react-icons/fa'
+import { FaAlignLeft, FaUserCircle, FaCaretDown, FaTimes, FaBars } from 'react-icons/fa'
 import { useAppSelector, useAppDispatch } from 'store/hooks'
 import Logo from 'components/Logo/Logo'
 import { sidebarActions } from 'features/Dashboard/sidebarSlice'
@@ -10,6 +10,7 @@ const Navbar = () => {
 	const { t } = useTranslation('common')
 	const { user } = useAppSelector(state => state.user)
 	const dispatch = useAppDispatch()
+	const { isSidebarOpen } = useAppSelector(state => state.sidebar)
 	const [showLogout, setShowLogout] = useState(false)
 	const toggleSidebar = () => {
 		dispatch(sidebarActions.toggleSidebar())
@@ -22,7 +23,7 @@ const Navbar = () => {
 		<Wrapper>
 			<div className='nav-center'>
 				<div className='burger-icon' onClick={toggleSidebar}>
-					<FaAlignLeft />
+					{isSidebarOpen ? <FaTimes className='times-icon' /> : <FaBars />}
 				</div>
 				<div className='logo'>
 					<Logo />

@@ -41,6 +41,9 @@ export const Wrapper = styled.nav`
 	.user-icon {
 		min-width: 16px;
 	}
+	.times-icon {
+		animation: 0.5s forwards iconRotate;
+	}
 	.dropdown {
 		position: absolute;
 		top: 40px;
@@ -67,6 +70,16 @@ export const Wrapper = styled.nav`
 		}
 		h3 {
 			display: none;
+		}
+	}
+
+	@keyframes iconRotate {
+		from {
+			transform: rotate(0deg);
+		}
+
+		to {
+			transform: rotate(360deg);
 		}
 	}
 `

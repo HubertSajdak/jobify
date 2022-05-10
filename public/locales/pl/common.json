@@ -30,7 +30,8 @@
 	},
 	"allJobsPage": {
 		"editButton": "edytuj",
-		"clearButton": "wyczyść"
+		"clearButton": "wyczyść",
+		"offers":"ofert"
 	},
 	"addJobPage": {
 		"headerAdd": "dodaj ofertę",
@@ -57,7 +58,18 @@
 		"full-time": "pełny etat",
 		"part-time": "niepełny etat",
 		"remote": "zdalnie",
-		"internship": "staż"
+		"internship": "staż",
+		"latest": "najnowsze",
+		"oldest": "najstarsze",
+		"a-z": "a-z",
+		"z-a": "z-a",
+		"all": "wszystkie",
+		"clearFilters": "usuń filtry",
+		"searchHeader": "wyszukaj",
+		"searchInput": "szukaj",
+		"statusSelect": "status",
+		"typeSelect": "typ",
+		"sortSelect": "sortuj"
 	},
 	"navbar": {
 		"greetings": "cześć",

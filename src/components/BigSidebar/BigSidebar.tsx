@@ -1,4 +1,3 @@
-import React from 'react'
 import { Wrapper } from 'assets/styles/wrappers/BigSidebar.styled'
 import Logo from 'components/Logo/Logo'
 import NavLinks from 'components/NavLinks/NavLinks'
@@ -15,7 +14,7 @@ const BigSidebar = () => {
 					</header>
 					<NavLinks />
 				</div>
-				<LangSwitcher/>
+				<LangSwitcher />
 			</div>
 		</Wrapper>
 	)
