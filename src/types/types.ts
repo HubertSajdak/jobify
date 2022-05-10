@@ -74,6 +74,11 @@ export interface AllJobsProps extends InitialFilterStateProps {
 		interview: number
 		pending: number
 	}
+	defaultStats: {
+		declined: number
+		interview: number
+		pending: number
+	}
 	monthlyApplications: {
 		count: number
 		date: string

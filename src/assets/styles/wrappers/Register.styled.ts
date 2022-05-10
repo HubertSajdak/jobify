@@ -61,6 +61,14 @@ export const Wrapper = styled.section`
 	.btn-demo {
 		background-color: ${({ theme }) => theme.palette.primary2};
 	}
+	.lang-switcher {
+		position: fixed;
+		border: none;
+		top: 1rem;
+		right: 1rem;
+		width: auto;
+		gap: 1rem;
+	}
 	@media (max-width: ${({ theme }) => theme.breakpoints.breakpointLg}) {
 		.register-img {
 			display: none;

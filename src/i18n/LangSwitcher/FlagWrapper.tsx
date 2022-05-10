@@ -1,25 +1,31 @@
+import styled from 'styled-components'
 export interface FlagWrapperProps {
 	src: string
 	alt: string
 	onClick: React.MouseEventHandler<HTMLDivElement>
+	lang: string
 }
 
-const size = 25
-
-const FlagWrapper = ({ src, alt, onClick }: FlagWrapperProps) => {
+const FlagWrapper = ({ src, alt, onClick, lang }: FlagWrapperProps) => {
 	return (
-		<div
-			onClick={onClick}
-			style={{
-				width: size,
-				height: size,
-				display: 'flex',
-				justifyContent: 'center',
-				alignItems: 'center',
-			}}>
-			<img src={src} alt={alt} width={size} />
-		</div>
+		<Wrapper className='flag-wrapper' onClick={onClick}>
+			<img src={src} alt={alt} />
+		</Wrapper>
 	)
 }
 
 export default FlagWrapper
+
+const Wrapper = styled.div`
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+	img {
+		width: 25px;
+		transition: all 0.2s;
+	}
+	img:hover {
+		transform: scale(1.1);
+	}
+`

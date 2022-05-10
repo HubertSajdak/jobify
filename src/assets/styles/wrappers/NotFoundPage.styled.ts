@@ -15,7 +15,7 @@ export const Wrapper = styled.main`
 		max-width: 600px;
 	}
 	a {
-		color: var(--primary-300);
+		color: ${({ theme }) => theme.palette.primary3};
 		text-decoration: underline;
 	}
 `

@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import styled from 'styled-components'
 import FlagWrapper from './FlagWrapper'
 
 export const extendedAvaliableLangs = [
@@ -17,29 +18,28 @@ export const extendedAvaliableLangs = [
 ]
 
 const LangSwitcher = () => {
-	// i18n - instancja i18n - tego obiektu który ma w sobie wszystkie ustawienia który ty podałeś w pliku i18n
 	const { i18n } = useTranslation()
 
 	return (
-		<div
-			style={{
-				position: 'fixed',
-				top: 10,
-				right: 10,
-				display: 'flex',
-				flexDirection: 'row',
-				gap: '1rem',
-			}}>
+		<Wrapper className='lang-switcher'>
 			{extendedAvaliableLangs.map(lang => (
 				<FlagWrapper
 					key={lang.lang}
 					alt={lang.lang}
 					src={lang.iconUrl}
+					lang={lang.lang}
 					onClick={() => i18n.changeLanguage(lang.lang)}
 				/>
 			))}
-		</div>
+		</Wrapper>
 	)
 }
 
 export default LangSwitcher
+
+const Wrapper = styled.div`
+	display: flex;
+	width: 100%;
+	padding: 1rem 0;
+	border-top: 1px solid ${({ theme }) => theme.palette.grey2};
+`
