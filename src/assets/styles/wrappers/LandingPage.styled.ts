@@ -24,6 +24,14 @@ const Wrapper = styled.main`
 	.logo-img {
 		width: 200px;
 	}
+	.lang-switcher {
+		position: fixed;
+		border: none;
+		top: 1rem;
+		right: 1rem;
+		width: auto;
+		gap: 1rem;
+	}
 
 	@media (max-width: 992px) {
 		.landing-img {

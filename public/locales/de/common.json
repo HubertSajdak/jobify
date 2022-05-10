@@ -40,7 +40,8 @@
 	},
 	"allJobsPage": {
 		"editButton": "bearbeiten",
-		"clearButton": "löschen"
+		"clearButton": "löschen",
+		"offers": "mitarbeiter"
 	},
 	"statsPage": {
 		"statsHeader": "monatliche Anträge",
@@ -55,7 +56,18 @@
 		"full-time": "Vollzeit",
 		"part-time": "Teilzeit",
 		"remote": "remote",
-		"internship": "praktikum"
+		"internship": "praktikum",
+		"latest": "neuste",
+		"oldest": "älteste",
+		"a-z": "a-z",
+		"z-a": "z-a",
+		"all": "alle",
+		"clearFilters": "Klarsichtfilter",
+		"searchHeader": "Suchformular",
+		"searchInput": "Suche",
+		"statusSelect": "status",
+		"typeSelect": "typ",
+		"sortSelect": "sortieren"
 	},
 	"navbar": {
 		"greetings": "Hallo",

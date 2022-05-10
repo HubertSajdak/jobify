@@ -1,4 +1,3 @@
-import React from 'react'
 import { Wrapper } from 'assets/styles/wrappers/ChartsContainer.styled'
 import AreaResponsiveChart from 'components/AreaChart/AreaResponsiveChart'
 import { useAppSelector } from 'store/hooks'

@@ -29,7 +29,7 @@ const Job = ({ _id, position, company, jobLocation, jobType, createdAt, status }
 				<div className='content-center'>
 					<JobInfo icon={<FaLocationArrow />} text={jobLocation} />
 					<JobInfo icon={<FaCalendarAlt />} text={date} />
-					<JobInfo icon={<FaBriefcase />} text={jobType} />
+					<JobInfo icon={<FaBriefcase />} text={t(`statusAndJobTypeOptions.${jobType}`)} />
 					<div className={`status ${status}`}>{t(`statusAndJobTypeOptions.${status}`)}</div>
 				</div>
 				<footer>
