@@ -11,6 +11,7 @@ export const Wrapper = styled.article<IProps>`
 	border-radius: ${({ theme }) => theme.border.borderRadius};
 	border-bottom: 5px solid ${props => props.color};
 	box-shadow: ${({ theme }) => theme.shadow.shadow3};
+
 	header {
 		display: flex;
 		align-items: center;

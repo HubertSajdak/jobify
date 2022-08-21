@@ -8,6 +8,7 @@ export const Wrapper = styled.section`
 	background-color: ${({ theme }) => theme.palette.white};
 	box-shadow: ${({ theme }) => theme.shadow.shadow3};
 	border-radius: ${({ theme }) => theme.border.borderRadius};
+
 	.form {
 		width: 100%;
 	}
