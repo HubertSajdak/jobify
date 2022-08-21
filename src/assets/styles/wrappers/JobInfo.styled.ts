@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
 	display: flex;
 	align-items: center;
 	.icon {
-		font-size: 1rem;
+		font-size: 0.9rem;
 		margin-right: 1rem;
 		display: flex;
 		align-items: center;
